@@ -1,3 +1,4 @@
+import Head from "next/head";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
@@ -12,19 +13,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// You can still export a metadata object for supported properties:
 export const metadata: Metadata = {
   title: "Start Conversation",
   description: "Autochat Start Conversation",
   openGraph: {
+    url: "https://xitub.com", // your URL here
+    type: "website",            // type of your content
     images: [
       {
-        url: "https://xitub.com/autochat-icon.png", // Adjust with your image path or absolute URL.
-        width: 1024,                       // Recommended width for social sharing.
-        height: 1024,                       // Recommended height for social sharing.
-        alt: "App Icon Image", // A text alternative for the image.
+        url: "https://xitub.com/autochat-icon.png",
+        width: 1024,
+        height: 1024,
+        alt: "App Icon Image",
       },
     ],
-    siteName: "Autochat", // Optional: Your website or application name.
+    siteName: "Autochat",
   },
 };
 
@@ -35,6 +39,10 @@ export default function PageLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        {/* Custom meta tag that isn’t supported in the metadata export */}
+        <meta property="fb:app_id" content="1771700623387280" />
+      </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
