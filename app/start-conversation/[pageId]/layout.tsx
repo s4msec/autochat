@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "/autochat-icon.png", // Adjust with your image path or absolute URL.
+        url: "https://xitub.com/autochat-icon.png", // Adjust with your image path or absolute URL.
         width: 1024,                       // Recommended width for social sharing.
         height: 1024,                       // Recommended height for social sharing.
         alt: "App Icon Image", // A text alternative for the image.
