@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Start Conversation",
   description: "Autochat Start Conversation",
+  facebook: {
+    appId: "1771700623387280"
+  },
   openGraph: {
     url: "https://xitub.com/start-conversation/100071832524726", // your URL here
     type: "website",            // type of your content
@@ -38,10 +41,6 @@ export default function PageLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Custom meta tag that isn’t supported in the metadata export */}
-        <meta name="fb:app_id" content="1771700623387280" />
-      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
