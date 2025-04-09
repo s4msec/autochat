@@ -40,7 +40,7 @@ export default function PageLayout({
     <html lang="en">
       <head>
         {/* Custom meta tag that isn’t supported in the metadata export */}
-        <meta property="fb:app_id" content="1771700623387280" />
+        <meta name="fb:app_id" content="1771700623387280" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
