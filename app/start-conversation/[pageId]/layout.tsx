@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Start Conversation",
   description: "Autochat Start Conversation",
   openGraph: {
-    url: "https://xitub.com", // your URL here
+    url: "https://xitub.com/start-conversation/100071832524726", // your URL here
     type: "website",            // type of your content
     images: [
       {
