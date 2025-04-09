@@ -1,4 +1,3 @@
-import Head from "next/head";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
@@ -39,10 +38,10 @@ export default function PageLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         {/* Custom meta tag that isn’t supported in the metadata export */}
         <meta property="fb:app_id" content="1771700623387280" />
-      </Head>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
